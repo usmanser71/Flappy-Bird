@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VIP Flappy — Time Runner Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="topbar">
+      <div class="brand">⎈ VIP Flappy</div>
+      <div class="hud">
+        <div id="best">Best: 0</div>
+        <div id="current">Score: 0</div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Start Screen -->
+      <div id="menu" class="panel">
+        <h1>VIP Flappy</h1>
+        <p class="muted">A sleek VIP edition — tap/click or Space to fly</p>
+        <div class="menu-buttons">
+          <button id="btn-play" class="btn primary">▶ Play</button>
+          <button id="btn-sound" class="btn">🔊 Sound On</button>
+        </div>
+        <small class="credit">Built with ❤️ — No assets, WebAudio background</small>
+      </div>
+
+      <!-- Game Canvas -->
+      <div id="game-wrap" class="hidden">
+        <canvas id="game"></canvas>
+        <div id="overlay" class="hidden">
+          <div id="game-over-card">
+            <h2>Game Over</h2>
+            <p id="final-score">Score: 0</p>
+            <button id="btn-restart" class="btn primary">Restart</button>
+            <button id="btn-menu" class="btn">Main Menu</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <small>VIP Flappy • Mobile & Desktop • Zero-cost</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
