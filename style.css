@@ -1,0 +1,16 @@
+/* Fullscreen canvas, remove scroll and margins */
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+  background:#7ec8e3; /* fallback while canvas renders */
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  touch-action: manipulation;
+}
+#gameCanvas{
+  display:block;
+  width:100vw;
+  height:100vh;
+}
